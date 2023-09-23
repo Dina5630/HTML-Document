@@ -1,0 +1,268 @@
+*
+{
+    box-sizing: border-box;/* we are going to use flex so our application don't move to the Right  side of the page for that reason using box-sizing*/
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+/*Header*/
+ header
+ {
+    display: flex;/*column is convert to row*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 18%;/* top and bottom 10px* left and right 18% ithu unagluku equal 18 screen la convert pannidum*/
+    border-bottom: 1px solid rgb(218, 219, 222,1);
+    background-color: white;
+    position: sticky;/* position move agama irruka header ennaku move aga kudathu athukaga intha line and enaku top la irrukanum so top 0 kuduthurukan*/
+    top: 0;
+    z-index: 10px;
+ }
+ header.logo
+ {
+    height:  29px;
+    width: 103px;
+ }
+ header.logo img{
+    height: 100%;
+    object-fit: contain;
+ }
+ header .search-box
+ {
+    width: 250px;
+    background-color: rgb(239, 238, 239, 1);
+    padding: 3px 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+ }
+ /* input search css*/
+ header .search-box input
+ {
+    height:  30px;
+    border:  none;
+    outline: none;
+    background-color: rgb(239, 238, 239, 1);
+    padding-left: 10px;
+    font-size: 15px;
+    color: rgb(150, 180, 190,1);
+ }
+ header nav ul
+ {
+  list-style: none;
+  display: flex;
+ }
+ header nav ul li
+ {
+    margin-right: 20px;
+ }
+ 
+ header nav ul li:last-child /* that particular image indicte pannum*/
+ {
+ margin-right: 0;
+ }
+ header nav ul li a img{
+    width:  25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ header nav ul li a i{
+    font-size: 22px;
+    /* then i change the color*/
+    color: rgb(15, 18, 15,1);
+ }
+ /* Body Section*/
+
+section{
+    padding: 30px 18%;
+    background-color: rgb(239,238, 239,1);
+    display: flex;/*column is convert to row*/
+}
+/*<!--Left section-->*/
+.left-side{
+    width: 65%;
+
+}
+/*I want to split the width between two side so i split 65% to left and 35% to right*/
+
+/* then  idesign a story*/
+.story
+{
+    display: flex;/*column is convert to row*/
+    padding: 16px;
+    /*(the is nogap all are joined together i give padding)Inside the box there will be spaces on all four sides*/
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219, 1);
+    border-radius: 3px;
+    
+}
+.story .stories{
+    width: 18%;
+}
+/* image modification */
+.story .stories  a img{
+border-radius: 50%;
+border:2px solid rgb(219, 1, 179);
+padding: 1px;
+object-fit: cover;
+}
+.story .stories p {
+    /* i am going to Text over flow property */
+    width: 90%;
+    overflow: hidden;/* if it  more than Width size then the rest of the text will be hide*/
+    white-space: nowrap;/* not come to the next line*/
+    text-overflow: ellipsis;/* content is continuing */
+    color: #262626;
+}
+/* POST Section */
+.posts{
+margin: 25px 0px;
+background-color: white;
+border: 1px solid rgb(219, 219, 219, 1);
+border-radius: 3px;
+}
+.posts .post-title
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  16px;
+}
+.posts .post-title .post-left
+{
+    display: flex;
+    align-items: center;
+}
+.posts .post-title .post-left .image
+{
+    margin-right: 15px;
+}
+.posts .post-title .post-left .image img
+{
+ border-radius:  50%;
+ object-fit: cover;
+}
+.posts .post-title .post-left .Post-details .name
+{
+    padding-bottom:  2px;
+    font-weight: bold;
+}
+.posts .post-content img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.posts .post-footer
+{
+    display: flex;
+    justify-content: space-between;
+    padding:  16px;
+
+}
+.posts .post-footer .like-share-command i
+{
+    font-size: 22px;
+    margin-right: 10px;
+    
+}
+.posts .post-footer .save i
+{
+    font-size: 22px;
+    margin-left: 10px;
+
+}
+.posts .poster-footer-content
+{
+    padding: 0px 16px 16px 16px;
+}
+.posts .poster-footer-content p
+{
+    margin-bottom: 3px;
+}
+.posts .poster-footer-content .likes
+{
+    margin-bottom: 8px;
+}
+.posts .poster-footer-content .Name
+{
+    font-weight:  600;
+}
+.posts .poster-footer-content span{
+    font-weight: normal;
+    margin-left: 10px;
+}
+.posts .poster-footer-content .posting-time
+{
+    font-size:  10px;
+    margin-top:  6px;
+}
+.posts .add-comment
+{
+    padding: 16px;
+    border-top: 1px solid rgb(225, 226, 221, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.posts .add-comment .left-side
+{
+    display: flex;
+    align-items: center;
+}
+.posts .add-comment .left-side i{
+    font-size:  22px;
+    margin-right: 15px;
+}
+
+.posts .add-comment .left-side input
+{
+    width: 100%;
+    height:  30px;
+    border:  none;
+    outline: none;
+    background-color: rgb(239, 238, 239, 1);
+    padding-left: 10px;
+    font-size: 15px;
+    color: rgb(150, 180, 190,1);
+}
+
+
+
+
+
+
+
+
+
+
+.rights-side{
+    width: 35%;
+    margin-top:  15px;
+
+}
+.rights-side .profile-title
+{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 20%;/* position tag use panni fix panra next athu engayum move agama irruka position use panran then right side la irruka right tag use panren*/
+
+}
+.rights-side .profile-title .profile-left
+{
+    display: flex;
+    align-items: center;
+    margin-right:40px ;
+}
+.rights-side .profile-title .profile-left .image img{
+    border-radius:  50%;
+    margin-right: 15px;
+}
+.rights-side .profile-title .profile-left .details .name
+{
+    padding-bottom: 3px;
+
+}
